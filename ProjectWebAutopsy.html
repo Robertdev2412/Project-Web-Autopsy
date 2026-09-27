@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project 1</title>
+    <link rel="stylesheet" href="ProjectWebAutopsy.css" />
+    <link rel="stylesheet" href="projectWebAutopsy-Logo.css" />
+    <!--<link rel="stylesheet" href="projectWebAutopsy-media.qeury.css" /> -->
+    <!-- nanti kalo lah banyak item -->
+    <!-- link google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link font-boxicon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- link font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+
+    <header id="header">
+      <!-- logo -->
+      <div class="logo">
+        <div class="websiteLogo">
+          <div class="logo1"></div>
+          <div class="logo2"></div>
+          <div class="logo3"></div>
+          <div class="logo4"></div>
+        </div>
+        <!-- title -->
+        <h1 id="title">
+          W<span id="E-text">E</span>B <span id="A-text">A</span>UTO<span
+            id="P-text"
+            >P</span
+          >SY
+        </h1>
+      </div>
+
+      <form action="" class="input-url">
+        <input type="url" placeholder="Input your URL" required />
+        <button type="submit" class="buttonSubmit">Submit URL</button>
+      </form>
+
+      <div class="add-tools"></div>
+
+      <div class="add-tools-mobile">
+        <button
+          class="hamburger-menu"
+          commandfor="toolBox"
+          command="toggle-popover"
+        >
+          <i class="bx bx-menu" id="hamburgerIcon"></i>
+        </button>
+      </div>
+
+      <dialog class="toolBox" id="toolBox" popover="">
+        <p>Tools akan muncul di sini.</p>
+      </dialog>
+    </header>
+    <!-- ============ BODY / DASHBOARD ============ -->
+    <div class="content">
+      <aside class="aside">
+        <ul class="asidenya">
+          <li><button data-target="overviewSection">Overview</button></li>
+          <li><button data-target="performanceSection">Performance</button> </li>
+          <li><button data-target="accesbilitySection">Accesbility</button></li>
+          <li><button data-target="SEOSection">SEO</button></li>
+          <li><button data-target="mobileSection">Mobile</button></li>
+          <li><button data-target="ux-desainSection">Ux-Desain</button></li>
+          <li><button data-target="code-qualitySection">Code Quality</button></li>
+          <li><button data-target="priorityToFixSection">Priority To Fix </button></li>
+          <li><button data-target="webPreviewSection">Web Preview</button> </li>
+          <li><button data-target="sequritySection">Sequrity</button></li>
+        </ul>
+      </aside>
+      <main class="main">
+      <section class="overviewSection" id="overviewSection">
+        <div class="websiteHealth">
+          <div class="toolsTitle">Website Health</div>
+          <!-- <div class="totalScoreWebsiteHealth"></div>
+          <div class="ScoreWebsiteHealth"></div> -->
+        </div>
+        <div class="websiteInfo">
+          <div class="performance">performance</div>
+          <div class="accesbility">accesbility</div>
+          <div class="SEO">SEO</div>
+          <div class="mobile">mobile</div>
+          <div class="UX-Desain">UX-Desain</div>
+          <div class="codeQuality">code Quality</div>
+        </div>
+        <div class="priorityToFix">Priority to fix</div>
+        <div class="webPreview">Website Preview</div>
+        <div class="sequrity">sequrity</div>
+      </section>
+      <section class="performanceSection" id="performanceSection"></section>
+      <section class="accesbilitySection"  id="accesbilitySection"></section>
+      <section class="SEOSection" id="SEOSection"></section>
+      <section class="mobileSection" id="mobileSection"></section>
+      <section class="ux-desainSection" id="ux-desainSection"></section>
+      <section class="code-qualitySection" id="code-qualitySection"></section>
+      <section class="priorityToFixSection" id="priorityToFixSection"></section>
+      <section class="webPreviewSection" id="webPreviewSection"></section>
+      <section class="sequritySection" id="sequritySection"></section>
+       </main>
+    </div>
+    <nav class="navbarMobile">
+      <form action="" class="input-url-mobile">
+        <input type="url" placeholder="Input your URL" required />
+        <button class="buttonSubmit">Submit URL</button>
+      </form>
+    </nav>
+
+
+
+    <script src="ProjectWebAutopsy.js" defer></script>
+  </body>
+</html>
