@@ -1,0 +1,132 @@
+.performanceSection{
+  height: auto;
+ display: grid;
+ grid-template-columns: 3fr 1fr;
+ gap: 15px;
+ 
+}
+/* ================.performanceSection1========== */
+.performanceSection1{
+width: 100%;
+height: 83vh;
+;border-radius: 10px;
+gap: 15px;
+display: flex;
+flex-direction: column;
+}
+.performanceScoreAndVitalHealth{
+width: 100%;
+height: 50%;
+border-radius: 10px;
+display: grid;
+flex-direction: row;
+grid-template-columns: 1.5fr 1fr 1fr 1fr;
+}
+.performanceScore{
+  width: 100%;
+  height: 100%;
+  background-color: brown;
+  border-right: 1px solid var(--warna-pembatas);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.vitalHealth{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(10, 79, 56);
+  border-right: 1px solid var(--warna-pembatas);
+}
+#vitalHealth3{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+}
+.lodingSpeadAndServerResponse{
+width: 100%;
+height: 50%;
+border-radius: 10px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+}
+.loadingSpeed,.serverResponse{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+.fullyLoadedSpead,.pageLoadTime,.httpResponseTime,.ttfb{
+  background-color: rgb(10, 117, 117);
+   border-radius: 10px;
+}
+/*========== .performanceSection2============== */
+.performanceSection2{
+width: 100%;
+height: 100%;
+border-radius: 10px;
+display: grid;
+gap: 15px;
+}
+.imageOptimization,.totalPageSize,.numberOfRequest{
+background-color: rgb(95, 12, 12);
+border-radius: 10px;
+}
+
+
+@media (max-width: 920px){
+  .performanceSection{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .performanceScoreAndVitalHealth{
+    grid-template-columns: 1fr 1fr;
+  }
+  .performanceScore{
+    border-radius: 0;
+  }
+  #vitalHealth3{
+    border-radius: 0;
+  }
+  .performanceSection2{
+    height: 90vh;
+  }
+  .loadingSpeed,.serverResponse{
+  grid-template-columns: 1fr;
+}
+}
+@media (min-width: 720px) and (max-width: 920px){
+.loadingSpeed,.serverResponse{
+  grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 520px){
+.performanceSection{
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  display: flex;
+  height: auto;
+}
+.performanceSection1{
+  height: 180vh;
+}
+.performanceScoreAndVitalHealth{
+  height: 70%;
+  gap: 15px;
+  grid-template-columns: 1fr;
+}
+.vitalHealth,.performanceScore{
+   border-radius: 10px;
+}
+.lodingSpeadAndServerResponse{
+  height: 30%;
+}
+.performanceSection2{
+  height: 90vh;
+}
+.loadingSpeed,.serverResponse{
+  grid-template-columns: 1fr;
+}
+}

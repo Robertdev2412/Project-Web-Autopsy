@@ -1,0 +1,81 @@
+.sequritySection{
+    height: auto;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 15px;
+}
+.securtityTotalScore{
+    height: 83vh;
+    width: 100%;
+    border-radius: 10px;
+    background-color: brown;
+}
+.securityInfo{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
+.securityInfoTitle{
+    background-color: var(--warna-element);
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    width: 100%;
+    height: 50px;
+}
+.securityInfoProblem{
+   display: flex;
+   box-sizing: border-box;
+   overflow: auto;
+   flex-direction: column;
+   flex-wrap: wrap;
+   height: 425px;
+  
+}
+.securityProblem{
+   width: 250px;
+   border: 1px solid var(--warna-pembatas);
+   background-color: rgb(56, 56, 78);
+   overflow: auto;
+height: 100%;
+}
+/* Ukuran scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Background scrollbar */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Bagian yang digeser (thumb) */
+::-webkit-scrollbar-thumb {
+  background: var(--warna-element);
+  border-radius: 10px;
+}
+
+/* Warna saat diarahkan kursor */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--warna-judul);
+}
+
+@media (max-width: 680px){
+.sequritySection{
+    grid-template-columns: 1fr;
+}
+.securityInfo{
+    height: 83vh;
+}
+.securityInfoTitle{
+    height: 50px;
+}
+.securityInfoProblem{
+    height:650px;
+}
+.securityProblem{
+ width: 325px;
+}
+
+}

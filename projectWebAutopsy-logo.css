@@ -1,0 +1,140 @@
+/* logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.websiteLogo {
+  width: 45px;
+  min-width: 20px;
+  height: 45px;
+  min-height: 20px;
+  border-radius: 50%;
+  border: 5px solid rgb(97, 97, 97);
+  background-color: rgb(0, 1, 14);
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+}
+.logo1,
+.logo4 {
+  width: 10%;
+  height: 50%;
+  background-color: rgb(158, 12, 249);
+  position: relative;
+  bottom: -25%;
+}
+.logo2 {
+  transform: rotate(17deg);
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 70px;
+}
+.logo3 {
+  transform: rotate(-17deg);
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 70px;
+}
+.logo4 {
+  transform: translateX(-30%);
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  transform: rotate(12deg);
+}
+.logo1 {
+  transform: translateX(30%);
+  transform: rotate(-12deg);
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+}
+.logo2,
+.logo3 {
+  width: 10%;
+  height: 100%;
+  background-color: rgb(158, 12, 249);
+}
+
+/* title text */
+#title {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1.7rem, 3vw + 0.5rem, 2rem);
+  color: var(--warna-judul);
+  margin: 0 0 0 0.25rem;
+}
+
+#A-text {
+  animation-name: text-A;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  animation-delay: 8s;
+}
+@keyframes text-A {
+  0%,
+  50% {
+    color: blueviolet;
+  }
+  51%,
+  61%,
+  71%,
+  81%,
+  91%,
+  100% {
+    color: rgb(1, 1, 1);
+  }
+}
+
+#P-text {
+  animation-name: text-p;
+  animation-duration: 2s;
+  animation-delay: 7s;
+}
+@keyframes text-p {
+  0% {
+    color: blueviolet;
+  }
+  10%,
+  20%,
+  50%,
+  80%,
+  100% {
+    color: black;
+  }
+}
+
+#E-text {
+  animation-name: text-E;
+  animation-duration: 2s;
+  animation-iteration-count: 5;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  animation-delay: 3.5s;
+}
+@keyframes text-E {
+  0%,
+  10%,
+  30%,
+  39% {
+    color: blueviolet;
+  }
+  40%,
+  50% {
+    color: black;
+  }
+  51%,
+  61% {
+    color: blueviolet;
+  }
+  62%,
+  76% {
+    color: black;
+  }
+  77%,
+  87%,
+  97%,
+  100% {
+    color: blueviolet;
+  }
+}

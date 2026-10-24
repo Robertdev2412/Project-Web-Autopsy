@@ -1,0 +1,306 @@
+:root {
+  --warna-judul: rgb(158, 12, 249);
+  --warna-background: rgb(15, 5, 24);
+  --warna-pembatas: rgb(42, 42, 42);
+  --warna-element: rgb(27, 26, 43);
+  --warna-tulisan-putih: rgb(253, 253, 253);
+  --warna-tulisan-hitam: rgb(253, 253, 253);
+  --warna-elementPadaNavbar: rgb(23, 22, 39);
+}
+* {
+  box-sizing: border-box;
+}
+.no-scroll {
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  color: var(--warna-tulisan-putih);
+  background-color: var(--warna-background);
+}
+/* 
+   HEADER
+ */
+#header {
+  width: 100%;
+  height: auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*  form input URL  */
+.input-url {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid rgb(52, 52, 52);
+  border-radius: 5px;
+  overflow: hidden; 
+}
+
+.input-url input {
+  border: none;
+  color: var(--warna-tulisan-putih);
+  background: none;
+  outline: none;
+  width: 40vw;
+  padding: 0.5rem 0.75rem;
+}
+
+/* efek: hover tombol submit ikut menyorot input di sebelahnya */
+.input-url input:has(+ .buttonSubmit:hover) {
+  background: rgba(158, 12, 249, 0.1);
+}
+
+.input-url button {
+  border: none;
+  width: 10vw;
+  min-width: 100px;
+  height: 100%;
+  padding: 0.5rem 0;
+  color: var(--warna-tulisan-putih);
+  background-color: var(--warna-judul);
+  cursor: pointer;
+}
+
+/*  tools (desktop)  */
+.add-tools {
+  width: 20%;
+  height: 2.5rem;
+  border: 1px solid var(--warna-judul);
+  border-radius: 5px;
+}
+
+/*  hamburger (mobile only, disembunyikan di desktop)  */
+.add-tools-mobile {
+  display: none;
+  justify-content: flex-end;
+  width: 20%;
+}
+
+.hamburger-menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#hamburgerIcon {
+  font-size: clamp(1.5rem, 2vw + 0.5rem, 2rem);
+  color: var(--warna-tulisan-putih);
+}
+/*  popover tools */
+.toolBox {
+  width: 20vw;
+  height: 20vh;
+  background-color: var(--warna-element);
+  border: 1px solid var(--warna-judul);
+  border-radius: 10px;
+  color: var(--warna-tulisan);
+  padding: 1rem;
+  opacity: 1;
+   transition: 300ms;
+
+}
+@starting-style{
+  .toolBox{
+    height: 0vh;
+    opacity: 0;
+ }
+}
+/* 
+   ==================== BODY / DASHBOARD ====================
+ */
+.content {
+  display: flex;
+  gap: 20px;
+  padding: 0 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.aside {
+  background-color: var(--warna-element);
+  width: 15vw;
+  min-width: 50px;
+  height: 83vh;
+  border-radius: 10px;
+  padding: 1rem;
+  padding-top: 0%;
+  padding-right: 0%;
+  padding-left: 0%;
+}
+.aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--warna-tulisan-putih);
+}
+.aside li {
+  cursor: pointer;
+  border-radius: 10px;
+  border-bottom: 1px solid var(--warna-pembatas);
+  height: auto;
+}
+
+.aside li button{
+  width: 100%;
+  height: clamp(35px,5vh,60px);
+  background:none ;
+  border: none;
+  color:var(--warna-tulisan) ;
+  display: flex;
+  font-size: clamp(0.9rem,1.3vw,2rem);
+   /* padding: 0.5rem 0; */
+     padding-top:clamp(8px,1.27vh,25px);
+  border-radius: 10px;
+}
+.aside li button:hover{
+background-color: var(--warna-judul);
+}
+
+
+/* ===============main================= */
+.main{
+  height: 83vh;
+  flex: content;
+}
+
+
+
+.performanceSection,.accesbilitySection,.sequritySection,.SEOSection,.mobileSection,.ux-desainSection,.code-qualitySection,.priorityToFixSection,.webPreviewSection{
+ border-radius: 10px;
+  width: 100%;
+  height: 100%;
+border: 2px solid blueviolet;
+}
+.main section{
+  display: none;
+  border-radius: 10px;
+}
+.main section.active{
+  display: grid;
+}
+
+
+
+
+
+
+/* ==========bagian mobile========== */
+.navbarMobile{
+    width: 100vw;
+    height: 4.4vh;
+     position: fixed;
+  bottom: 0;
+  left: 0;
+  display: none;
+  background-color: var(--warna-background);
+  justify-content: center;
+}
+.input-url-mobile{
+ width: 90%;
+ height: 90%;
+ box-sizing: border-box;
+ white-space: nowrap;
+ border:2px solid var(--warna-judul) ;
+ border-radius: 15px;
+}
+.input-url-mobile input{
+  width: 65%;
+  height: 100%;
+  border-top-left-radius: 15px;
+ border-bottom-left-radius: 15px;
+ background:none ;
+ color: var(--warna-tulisan-putih);
+ border: none;
+}
+.input-url-mobile button{
+ width:34.4%;
+ height: 100%;
+ margin-left: 0%;
+ border-top-right-radius: 15px;
+ border-bottom-right-radius: 15px;
+  background:var(--warna-judul) ;
+  color: var(--warna-tulisan-putih);
+   border: none;
+}
+.input-url-mobile input:has(+ .buttonSubmit:hover) {
+  background: rgba(158, 12, 249, 0.1);
+}
+@media (max-width: 930px) {
+  .input-url {
+    display: none;
+  }
+  .add-tools {
+    display: none;
+  }
+  .add-tools-mobile {
+    display: flex;
+  }
+  .toolBox {
+    width: 60vw;
+    height: auto;
+    min-height: 20vh;
+    position-anchor: --hamburger-menu;
+    position-area: bottom left;
+  }
+  .hamburger-menu {
+    anchor-name: --hamburger-menu;
+  }
+  .navbarMobile{
+    display: flex;
+    box-sizing: border-box;
+   
+  }
+   .container{
+    flex-direction: column;
+  }
+}
+@media (max-width: 1020px) {
+  /* 768px */
+  /* .main{
+    flex: 1;
+  } */
+   .content{
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .aside {
+   width: 100%;
+   height: auto;
+   padding: 0.5rem;
+   padding-left: 0px;
+   padding-right: 0px;
+   background-color: var(--warna-background);
+  }
+  .aside ul{
+   display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 15px;
+  }
+  .aside ul li{
+   flex-shrink: 0;
+   background-color:  var(--warna-elementPadaNavbar);
+   border-radius: 10px;
+   border: 1px solid var(--warna-judul);
+}
+.aside li button{
+  /* padding: 0.5rem 0.5rem;  */
+   font-size: 1rem;
+}
+.aside ul::-webkit-scrollbar {
+  display: none;
+}}
+@media (min-width: 500px) and (max-width: 660px) {
+  .input-url-mobile{
+    width: 95%;
+  }
+}
+@media (min-width: 660px) and (max-width: 1020px) {
+   .input-url-mobile{
+    width: 95%;
+  }
+}

@@ -1,13 +1,21 @@
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>project 1</title>
-    <link rel="stylesheet" href="ProjectWebAutopsy.css" />
-    <link rel="stylesheet" href="projectWebAutopsy-Logo.css" />
-    <!--<link rel="stylesheet" href="projectWebAutopsy-media.qeury.css" /> -->
-    <!-- nanti kalo lah banyak item -->
+    <!-- logo -->
+    <link rel="stylesheet" href="projectWebAutopsy_css/projectWebAutopsy-logo.css" />
+    <link rel="stylesheet" href="projectWebAutopsy_css/projectWebAutopsy.css" />
+    <!-- performance -->
+    <link rel="stylesheet" href="projectWebAutopsy_css/projectWebAutopsyPerformance.css" />
+    <!-- web preview-->
+    <link rel="stylesheet" href="projectWebAutopsy_css/projectWebAutopsyWebPreview.css" />
+    <!-- security -->
+     <link rel="stylesheet" href="projectWebAutopsy_css/projectWebAutopsySecurity.css">
+     <!-- overview -->
+    <link rel="stylesheet" href="projectWebAutopsy_css/projectWebAutopsy-overview.css" />
     <!-- link google-font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -58,8 +66,7 @@
         <button
           class="hamburger-menu"
           commandfor="toolBox"
-          command="toggle-popover"
-        >
+          command="toggle-popover">
           <i class="bx bx-menu" id="hamburgerIcon"></i>
         </button>
       </div>
@@ -85,7 +92,7 @@
         </ul>
       </aside>
       <main class="main">
-      <section class="overviewSection" id="overviewSection">
+      <section class="overviewSection active" id="overviewSection">
         <div class="websiteHealth">
           <div class="toolsTitle">Website Health</div>
           <!-- <div class="totalScoreWebsiteHealth"></div>
@@ -103,16 +110,127 @@
         <div class="webPreview">Website Preview</div>
         <div class="sequrity">sequrity</div>
       </section>
-      <section class="performanceSection" id="performanceSection"></section>
-      <section class="accesbilitySection"  id="accesbilitySection"></section>
-      <section class="SEOSection" id="SEOSection"></section>
-      <section class="mobileSection" id="mobileSection"></section>
+
+
+
+<!-- =======================perfromance======================== -->
+      <section class="performanceSection" id="performanceSection">
+        <div class="performanceSection1">
+          <div class="performanceScoreAndVitalHealth">
+            <div class="performanceScore">
+              <!-- scor performance --> score performance
+            </div>
+            <div class="vitalHealth">
+              <!--bagian lts -->lts
+            </div>
+            <div class="vitalHealth">
+              <!--bagian inp -->inp
+            </div>
+            <div class="vitalHealth" id="vitalHealth3">
+              <!-- bagian cls -->cls
+            </div>
+          </div>
+          <div class="lodingSpeadAndServerResponse">
+            <div class="loadingSpeed">
+              <div class="fullyLoadedSpead">fully loaded spead</div>
+              <div class="pageLoadTime">page load time</div>
+            </div>
+          <div class="serverResponse">
+            <div class="ttfb">ttfb</div>
+            <div class="httpResponseTime">http rsponse</div>
+          </div>
+          </div>
+        </div>
+        <div class="performanceSection2">
+          <div class="imageOptimization">imageOptimization</div>
+          <div class="totalPageSize">totalPageSize</div>
+          <div class="numberOfRequest">numberOfRequest</div>
+        </div>
+      </section>
+
+<!-- ====================accesbility======================== -->
+      
+      <section class="accesbilitySection"  id="accesbilitySection">
+        
+      </section>
+
+<!-- ===========================seo================================ -->
+      <section class="SEOSection" id="SEOSection">
+         <div class="seoInfo"></div>   
+             
+      </section>
+
+
+ <!-- ========================mobile============================-->
+      <section class="mobileSection" id="mobileSection">
+       
+      </section>
+ <!-- ========================ux design===========================-->
       <section class="ux-desainSection" id="ux-desainSection"></section>
+<!-- =========================code Quality========================== -->
       <section class="code-qualitySection" id="code-qualitySection"></section>
+
       <section class="priorityToFixSection" id="priorityToFixSection"></section>
-      <section class="webPreviewSection" id="webPreviewSection"></section>
-      <section class="sequritySection" id="sequritySection"></section>
+      
+<!-- ================web Preview==================-->
+      <section class="webPreviewSection" id="webPreviewSection">
+        <div class="previewModel">
+          <div class="webPreviewTitle">web preview</div>
+          <div class="viewModel"><details><summary>desktop</summary>
+            <p>laptop with hidpi screen</p>
+            <p>laptop with mdpi screen</p>
+            <p>laptop with touchn</p> 
+          </details>
+        </div>
+          <div class="viewModel"><details><summary>tablet</summary>
+            <p>galaxy tab s9 android 14</p>
+            <p>galaxy tab s9+ android 14</p>
+            <p>ipad mini ipados18.6</p>
+            <p>ipad ipados18.6</p>
+            <p>ipad pro ipados18.6</p>           
+          </details></div>
+          <div class="viewModel">
+            <details><summary>phone</summary>
+                 <p>galaxy s25 android 14</p>
+            <p>galaxy s25 pro android 14</p>
+            <p>andoid 11</p>
+            <p>andoid 12</p>
+            <p>iphone 14/15/16</p>
+            <p>iphone 17</p>
+            </details>
+          </div>
+          <div class="viewModel">
+             <details><summary>other</summary>
+                 <input type="number" placeholder="width" min="250" max="1500">
+                 <input type="number" placeholder="height" min="250" max="1500"> 
+            </details>
+          </div>
+        </div>
+        <div class="responsiveModel"></div>
+      </section>
+<!-- ================security==================-->
+      <section class="sequritySection" id="sequritySection">
+        <div class="securtityTotalScore">security score</div>
+        <div class="securityInfo">
+          <div class="securityInfoTitle">security info</div>
+          <div class="securityInfoProblem">
+            <div class="securityProblem">https&tls
+              </div>
+            <div class="securityProblem">dns dan email sequrity</div>
+            <div class="securityProblem">cookies</div>
+            <div class="securityProblem">cors</div>
+            <div class="securityProblem">file upload security</div>
+            <div class="securityProblem">waf</div>
+            <div class="securityProblem">rate limit</div>
+            <div class="securityProblem">blacklist/malware</div>
+            <div class="securityProblem">api security
+            </div>
+            <div class="securityProblem">third party security</div>
+          </div>
+        </div>
+      </section>
        </main>
+
     </div>
     <nav class="navbarMobile">
       <form action="" class="input-url-mobile">
@@ -123,6 +241,7 @@
 
 
 
-    <script src="ProjectWebAutopsy.js" defer></script>
+<script src="projectWebAutopsy_js/ProjectWebAutopsy.js" defer></script>
+   
   </body>
 </html>

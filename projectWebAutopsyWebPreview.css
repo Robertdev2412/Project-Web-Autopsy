@@ -1,0 +1,49 @@
+.webPreviewSection{
+    overflow: auto;
+    height: 83vh;
+}
+.previewModel{
+    width: 100%;
+    height: 35px;
+    background-color: var(--warna-element);
+    display: flex;
+    flex-direction: row;
+}
+.webPreviewTitle{
+    margin-right: 50px;
+    width: 15%;
+    height: auto;
+     font-size: clamp(16px,1.2vw,20px);
+}
+.viewModel{
+    width: 10%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid var(--warna-pembatas);
+    background-color: var(--warna-element);
+    margin-left: 10px;
+    text-align: center;
+    font-size: clamp(16px,1.2vw,20px);
+}
+.viewModel summary{
+    list-style: none;
+    cursor: pointer;
+}
+.viewModel details p{
+    width: 100%;
+    height: auto;
+    font-size: clamp(16px,1.2vw,20px);;
+    background-color: aqua;
+}
+.responsiveModel{
+    width: auto;
+    height: auto;
+    margin: auto;
+    background-color: rgb(202, 17, 17);
+}
+@media (max-width: 500px){
+.viewModel{
+    width: 20%;
+    padding-top: 10px;
+}
+}
